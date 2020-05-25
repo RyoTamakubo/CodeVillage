@@ -1,0 +1,52 @@
+#first-v {
+  height: 100%;
+  display: flex;
+  @include sp {
+    display: block;
+  }
+}
+
+.fv-title {
+  width: 45vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  @include sp {
+    font-size: 2rem;
+    color: #fff;
+    width: 100%;
+    height: 30%;
+    position: absolute;  
+    transform: translate(-50%,-50%);
+    top: 63%;
+    left: 50%;
+    z-index: 1;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  &__ja {
+    font-size: 3.8rem;
+    font-family: serif;
+    margin-bottom: 10rem;
+    @include sp {
+      text-shadow: 0 3px 5px black;
+    }
+  }
+  &__en {
+    font-size: 3.8rem;
+    font-family: Zapfino;
+  }
+}
+
+.fv-img {
+  width: 55vw;
+  height: 100vh;
+  background-image: url(../img/blond-woman.png);
+  background-size: cover;
+  @include sp {
+    width: 100%;
+    position: relative;
+  }
+}

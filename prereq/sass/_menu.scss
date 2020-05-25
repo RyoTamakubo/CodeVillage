@@ -1,0 +1,49 @@
+.menu-contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    flex-wrap: wrap;
+  }
+}
+.menu-contents__item {
+  width: 24%;
+  @include sp {
+    width: 100%;
+  }
+}
+
+.menu-contents__img {
+  width: 100%;
+  height: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.menu-text {
+  min-width: 20%;
+  font-family: Roboto Mono for Powerline;
+  padding: 37px 1.2vw 0;
+  &__name {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 34px;
+    @include sp {
+      text-align: left;
+    }
+  }
+  &__info {
+    font-size: 1.5rem;
+    margin-bottom: 34px;
+    @include sp {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
+  }
+  &__price {
+    font-size: 1.6rem;
+    text-align: right;
+  }
+}

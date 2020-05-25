@@ -1,0 +1,85 @@
+#access {
+  padding: 261px 0 70px 0;
+  background-color: #A193861F;
+    @include sp {
+      padding: 60px 0 60px 0;
+    }
+}
+.access__title {
+  font-size: 1.8rem;
+  color: $gray;
+  font-family: Roboto Mono for Powerline;
+  display: flex;
+  align-items: center;
+  margin: 0 8%;
+  margin-bottom: 10px;
+  @include sp {
+    margin-bottom: 50px;
+  }
+  &:after {
+    display: inline-block;
+    content: "";
+    width: 5em;
+    border-top: 1px solid $gray;
+    margin-left: 20px;
+    @include sp {
+      width: 2em;
+    }
+  }
+}
+
+.access-info {
+  width: 100%;
+  display: flex;
+  @include sp {
+    height: 50vh;
+    flex-direction: column-reverse;
+  }
+}
+
+.shop-wrap {
+  width: 40%;
+  height: 400px;
+  position: relative;
+  background-color: #D0C5BA;
+  @include sp {
+    width: 100%;
+  }
+  .shop-info {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    @include sp {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+    }
+    &__name {
+      font-size: 2.4rem;
+      color: #00000038;
+      margin-bottom: 15%;
+      @include sp {
+        margin-bottom: 10%;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 10%;
+      @include sp {
+        margin-bottom: 6%;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.map {
+  width: 60%;
+  height: 400px;
+  @include sp {
+    width: 100%;
+  }
+}
