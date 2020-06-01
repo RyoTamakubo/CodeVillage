@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  .footer-border {
+    border: 1px solid #fff;
+  }
+  p {
+    font-size: 1.8rem;
+    margin-top: 68px;
+    @include sp {
+      font-size: 1.3rem;
+    }
+  }
+}
