@@ -1,0 +1,64 @@
+#access {
+  padding-top: 100px;
+  position: relative;
+}
+.access-inner {
+  width: 100% - 7.3% *2;
+  margin: 0 auto;
+}
+.access-back {
+  width: 80%;
+  height: 310px;
+  background-color: $whine;
+  margin-top: 150px;
+  padding-top: 150px;
+  padding-left: 4%;
+  margin-bottom: 70px;
+  @include sp {
+    width: 100% - 7.3% *2;
+    height: 300px;
+    margin: 230px 7.3% 0;
+    padding-top: 170px;
+    padding-left: 0;
+  }
+  &__text {
+    width: 28%;
+    height: 64px;
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @include tab {
+      font-size: 1.3rem;
+    }
+    @include sp {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+.access-map {
+  width: 70%;
+  height: 310px;
+  position: absolute;
+  top: 230px;
+  right: 0;
+  box-shadow: 0 10px 99px #000000;
+  @include sp {
+    width: 100% - 7.3% *2;
+    height: 230px;
+    position: absolute;
+    top: 230px;
+    left: 7.3%;
+    
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    @include sp {
+      object-fit: cover;
+    }
+  }
+}
